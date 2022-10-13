@@ -18,8 +18,14 @@ class ListingController extends Controller
     // show single listing
     public function show(Listing $listing)
     {
-        return view('listing.show', [
+        return view('listings.show', [
             'listing' => $listing
         ]);
+    }
+
+    // Show Create Form
+    public function create()
+    {
+        return view('listings.create');
     }
 }
